@@ -8,9 +8,9 @@ namespace Semana01_Ejercicio2
 {
     public class Empleado
     {
-
+        
         private int Codigo;
-        private string Nombre;
+        public string Nombre;
         private int Horas;
         private double Tarifa;
 
@@ -45,7 +45,7 @@ namespace Semana01_Ejercicio2
         }
         public string GetNombre()
         {
-            return Nombre;
+            return Nombre ;
         }
 
         public void SetNombre(string nombre)

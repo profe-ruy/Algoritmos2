@@ -24,7 +24,6 @@ namespace Semana01
                 }
 
                 Cuadrado cuadrado = new Cuadrado(lado);
-
                 //proceso de datos
                 //double perimetro = 4 * lado;
                 //double area = lado * lado;
