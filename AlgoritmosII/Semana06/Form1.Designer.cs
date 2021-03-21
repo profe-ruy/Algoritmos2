@@ -39,7 +39,7 @@ namespace Semana06
             this.btnActualizar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnAumentar = new System.Windows.Forms.Button();
             this.btnFiltrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -100,6 +100,7 @@ namespace Semana06
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnActualizar
             // 
@@ -109,6 +110,7 @@ namespace Semana06
             this.btnActualizar.TabIndex = 7;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // button3
             // 
@@ -127,15 +129,16 @@ namespace Semana06
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // textBox1
+            // txtResultado
             // 
-            this.textBox1.Location = new System.Drawing.Point(241, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(551, 369);
-            this.textBox1.TabIndex = 10;
+            this.txtResultado.Location = new System.Drawing.Point(241, 20);
+            this.txtResultado.Multiline = true;
+            this.txtResultado.Name = "txtResultado";
+            this.txtResultado.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtResultado.Size = new System.Drawing.Size(551, 369);
+            this.txtResultado.TabIndex = 10;
             // 
             // btnAumentar
             // 
@@ -145,6 +148,7 @@ namespace Semana06
             this.btnAumentar.TabIndex = 11;
             this.btnAumentar.Text = "Aumentar 10%";
             this.btnAumentar.UseVisualStyleBackColor = true;
+            this.btnAumentar.Click += new System.EventHandler(this.btnAumentar_Click);
             // 
             // btnFiltrar
             // 
@@ -154,6 +158,7 @@ namespace Semana06
             this.btnFiltrar.TabIndex = 12;
             this.btnFiltrar.Text = "Filtrar productos con R";
             this.btnFiltrar.UseVisualStyleBackColor = true;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // Form1
             // 
@@ -162,7 +167,7 @@ namespace Semana06
             this.ClientSize = new System.Drawing.Size(813, 417);
             this.Controls.Add(this.btnFiltrar);
             this.Controls.Add(this.btnAumentar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnActualizar);
@@ -193,7 +198,7 @@ namespace Semana06
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button btnAumentar;
         private System.Windows.Forms.Button btnFiltrar;
     }
