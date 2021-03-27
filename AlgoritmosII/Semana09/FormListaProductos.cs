@@ -16,5 +16,10 @@ namespace Semana09
         {
             InitializeComponent();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("aaa");
+        }
     }
 }
