@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormActualizarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActualizarProducto.Designer.cs">
+      <DependentUpon>FormActualizarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAgregarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAgregarProducto.Designer.cs">
       <DependentUpon>FormAgregarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarProducto.Designer.cs">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEliminarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEliminarProducto.Designer.cs">
+      <DependentUpon>FormEliminarProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListaProductos.cs">
       <SubType>Form</SubType>
@@ -60,8 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormActualizarProducto.resx">
+      <DependentUpon>FormActualizarProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAgregarProducto.resx">
       <DependentUpon>FormAgregarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarProducto.resx">
+      <DependentUpon>FormBuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEliminarProducto.resx">
+      <DependentUpon>FormEliminarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaProductos.resx">
       <DependentUpon>FormListaProductos.cs</DependentUpon>
