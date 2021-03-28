@@ -19,9 +19,8 @@ namespace Semana09
 
         public void GuardarArchivo(string nombreArchivo, string texto)
         {
-            FileStream stream = new FileStream(nombreArchivo, FileMode.OpenOrCreate);
+            StreamWriter escritor = new StreamWriter(nombreArchivo);
             var lineas = texto.Split(';');
-            StreamWriter escritor = new StreamWriter(stream);
             foreach (var linea in lineas)
             {
                 if(!string.IsNullOrEmpty(linea))
