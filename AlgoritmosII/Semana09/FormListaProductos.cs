@@ -12,6 +12,7 @@ namespace Semana09
 {
     public partial class FormListaProductos : Form
     {
+        RepositorioProductos repositorio = new RepositorioProductos();
         public FormListaProductos()
         {
             InitializeComponent();
@@ -19,7 +20,14 @@ namespace Semana09
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("aaa");
+            FormAgregarProducto formAgregarProducto = new FormAgregarProducto();
+            this.Hide();
+            formAgregarProducto.Show();
+        }
+
+        private void FormListaProductos_Load(object sender, EventArgs e)
+        {
+            var productos = repositorio.GetProductos();
         }
     }
 }

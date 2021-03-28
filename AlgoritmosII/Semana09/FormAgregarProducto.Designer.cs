@@ -47,7 +47,7 @@ namespace Semana09
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnCancelar
             // 
@@ -57,6 +57,7 @@ namespace Semana09
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // txtPrecio
             // 
@@ -121,6 +122,7 @@ namespace Semana09
             this.Controls.Add(this.btnAgregar);
             this.Name = "FormAgregarProducto";
             this.Text = "FormAgregarProducto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAgregarProducto_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

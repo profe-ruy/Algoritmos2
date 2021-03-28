@@ -58,8 +58,14 @@
     <Compile Include="FormListaProductos.Designer.cs">
       <DependentUpon>FormListaProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManejadorDeArchivos.cs" />
+    <Compile Include="Producto.cs" />
+    <Content Include="productos.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositorioProductos.cs" />
     <EmbeddedResource Include="FormAgregarProducto.resx">
       <DependentUpon>FormAgregarProducto.cs</DependentUpon>
     </EmbeddedResource>

@@ -14,9 +14,25 @@ namespace Semana09
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormListaProductos());
+            try
+            {
+                RepositorioProductos repo = new RepositorioProductos();
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                //Application.ApplicationExit += Application_ApplicationExit;
+                Application.Run(new FormListaProductos());
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Problema al cargar los productos");
+            }
+            
+        }
+
+        private static void Application_ApplicationExit(object sender, EventArgs e)
+        {
+            
         }
     }
 }
