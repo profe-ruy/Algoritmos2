@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,58 +8,68 @@ namespace Semana09
 {
     public class RepositorioProductos
     {
-        private static List<Producto> productos;
-        private readonly ManejadorDeArchivos manejadorDeArchivos;
-        private static string ARCHIVO_PRODUCTOS = @"C:\Users\rrojas\source\repos\Algoritmos 2\AlgoritmosII\Semana09\productos.txt";
+        private List<Producto> productos;
+        private const string ARCHIVO_PRODUCTOS = @"C:\Users\rrojas\source\repos\Algoritmos 2\AlgoritmosII\Semana09\productos.txt";
+        private ManejadorDeArchivos manejadorDeArchivos = new ManejadorDeArchivos();
+
         public RepositorioProductos()
         {
-            manejadorDeArchivos = new ManejadorDeArchivos();
-            if (productos == null)
-            {
-                productos = new List<Producto>();
-                CargarProductos();
-            }
+            productos = new List<Producto>();
+            CargarData();
         }
 
-        private void CargarProductos()
+        private void CargarData()
         {
             string texto = manejadorDeArchivos.LeerArchivo(ARCHIVO_PRODUCTOS);
-            //empezamos a leer las lineas del archivo de texto
-            var lineas = texto.Split(';');
-
+            //romper las lineas por el separador de linea
+            string[] lineas = texto.Split(';');
+            //vamos a iterar las lineas para crear nuestro producto
             foreach (string linea in lineas)
             {
+                //verificar si la linea tiene valor 
                 if (!string.IsNullOrEmpty(linea))
                 {
-                    //lee la linea y crea un nuevo producto
-                    var valores = linea.Split(',');
+                    //leer linea por linea
+                    string[] valores = linea.Split(',');
+                    //crear nuestro nuevo Producto
                     Producto producto = new Producto(int.Parse(valores[0]), valores[1], double.Parse(valores[2]));
-                    //lo agrego a la lista de objetos
+                    //lo agregamos a la lista de productos
                     productos.Add(producto);
                 }
             }
         }
 
-        public bool GrabarProductos()
+        //metodos publics
+
+        public string GetProductos()
+        {
+            string mensaje = "";
+            for (int i = 0; i < productos.Count; i++)
+            {
+                //recupero el producto de la iteracion
+                Producto prod = productos.ElementAt(i);
+                mensaje += $"{prod.GetCodigo()} \t\t {prod.GetDescripcion()} \t\t {prod.GetPrecio()}";
+                mensaje += Environment.NewLine;
+            }
+            return mensaje;
+        }
+
+        public bool AgregarProducto(Producto item)
+        {
+            productos.Add(item);
+            GuardarArchivo();
+            return true;
+        }
+
+        private void GuardarArchivo()
         {
             string texto = "";
-            foreach (Producto item in productos)
+            //iterar o recorrer nuestra coleccion
+            foreach (Producto producto in productos)
             {
-                texto += $"{item.GetCodigo()},{item.GetDescripcion()},{item.GetPrecio()};";
+                texto += $"{producto.GetCodigo()},{producto.GetDescripcion()},{producto.GetPrecio()};";
             }
             manejadorDeArchivos.GuardarArchivo(ARCHIVO_PRODUCTOS, texto);
-            return true;
-        }
-
-        public bool AddProducto(Producto producto)
-        {
-            productos.Add(producto);
-            return true;
-        }
-
-        public List<Producto> GetProductos()
-        {
-            return productos;
         }
     }
 }

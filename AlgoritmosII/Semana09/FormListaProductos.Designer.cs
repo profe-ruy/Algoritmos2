@@ -94,6 +94,7 @@ namespace Semana09
             this.Controls.Add(this.btnBuscar);
             this.Name = "FormListaProductos";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormListaProductos_FormClosing);
             this.Load += new System.EventHandler(this.FormListaProductos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

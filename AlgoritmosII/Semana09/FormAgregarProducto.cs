@@ -12,33 +12,41 @@ namespace Semana09
 {
     public partial class FormAgregarProducto : Form
     {
-        RepositorioProductos repo = new RepositorioProductos();
+        RepositorioProductos repositorio = new RepositorioProductos();
         public FormAgregarProducto()
         {
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            FormListaProductos formListaProductos = new FormListaProductos();
-            this.Hide();
-            formListaProductos.Show();
+            //leer datos
+            int codigo = int.Parse(txtCodigo.Text);
+            string descripcion = txtDescripcion.Text.Trim();
+            double precio = double.Parse(txtPrecio.Text);
+            //crear un nuevo producto
+            Producto producto = new Producto(codigo, descripcion, precio);
+            //agregar el producto a la lista
+            bool resultado = repositorio.AgregarProducto(producto);
+            if (resultado)
+                MessageBox.Show("Producto agregado");
+            else
+                MessageBox.Show("Producto NO agregado");
+
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
-            var producto = new Producto(1, "aa", 12.1);
-            var resultado = repo.AddProducto(producto);
-            if (resultado) {
-                MessageBox.Show("Producto Agregado!");
-            }
-            else
-                MessageBox.Show("Producto NO Agregado!");
+            //crear el formulario de Lista
+            FormListaProductos formLista = new FormListaProductos();
+            //ocultar el formulario actual
+            this.Hide();
+            //mostrar el nuevo formulario
+            formLista.Show();
         }
 
         private void FormAgregarProducto_FormClosing(object sender, FormClosingEventArgs e)
         {
-            repo.GrabarProductos();
             Application.Exit();
         }
     }

@@ -12,22 +12,37 @@ namespace Semana09
 {
     public partial class FormListaProductos : Form
     {
-        RepositorioProductos repositorio = new RepositorioProductos();
+        private RepositorioProductos repositorio = new RepositorioProductos();
+
         public FormListaProductos()
         {
             InitializeComponent();
         }
 
+        private void FormListaProductos_Load(object sender, EventArgs e)
+        {
+            ListarProductos();
+        }
+
+        private void ListarProductos()
+        {
+            txtResultado.Text = repositorio.GetProductos();
+        }
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            //declarar el formulario de crear producto
             FormAgregarProducto formAgregarProducto = new FormAgregarProducto();
+            //ocultar nuestro formulario actual
             this.Hide();
+            //mostrar el nuevo formulario
             formAgregarProducto.Show();
         }
 
-        private void FormListaProductos_Load(object sender, EventArgs e)
+        private void FormListaProductos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var productos = repositorio.GetProductos();
+            //cerrar la aplicacion
+            Application.Exit();
         }
     }
 }
