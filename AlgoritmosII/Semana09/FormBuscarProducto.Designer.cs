@@ -47,6 +47,7 @@ namespace Semana09
             this.btnBuscar.TabIndex = 64;
             this.btnBuscar.Text = "Busca";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtPrecio
             // 
@@ -106,6 +107,7 @@ namespace Semana09
             this.btnCancelar.TabIndex = 57;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormBuscarProducto
             // 

@@ -39,6 +39,17 @@ namespace Semana09
             }
         }
 
+        public Producto Buscar(int codigo)
+        {
+            for (int i = 0; i < productos.Count; i++)
+            {
+                Producto prod = productos.ElementAt(i);
+                if (prod.GetCodigo() == codigo)
+                    return prod;
+            }
+            return null;
+        }
+
         //metodos publics
 
         public string GetProductos()

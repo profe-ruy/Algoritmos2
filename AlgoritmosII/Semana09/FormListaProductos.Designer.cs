@@ -81,6 +81,7 @@ namespace Semana09
             this.btnBuscar.TabIndex = 45;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // FormListaProductos
             // 

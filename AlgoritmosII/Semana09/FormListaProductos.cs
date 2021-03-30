@@ -44,5 +44,12 @@ namespace Semana09
             //cerrar la aplicacion
             Application.Exit();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            FormBuscarProducto formBuscar = new FormBuscarProducto();
+            this.Hide();
+            formBuscar.Show();
+        }
     }
 }
