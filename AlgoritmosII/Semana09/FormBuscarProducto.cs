@@ -16,5 +16,11 @@ namespace Semana09
         {
             InitializeComponent();
         }
+
+        private void FormBuscarProducto_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //cerrar la aplicacion
+            Application.Exit();
+        }
     }
 }

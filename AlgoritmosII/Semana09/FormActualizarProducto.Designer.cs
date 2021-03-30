@@ -133,6 +133,7 @@ namespace Semana09
             this.Controls.Add(this.btnActualizar);
             this.Name = "FormActualizarProducto";
             this.Text = "FormActualizarProducto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormActualizarProducto_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

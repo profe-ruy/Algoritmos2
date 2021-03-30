@@ -133,6 +133,7 @@ namespace Semana09
             this.Controls.Add(this.btnEliminar);
             this.Name = "FormEliminarProducto";
             this.Text = "FormEliminarProducto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormEliminarProducto_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

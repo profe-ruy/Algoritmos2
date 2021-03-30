@@ -122,6 +122,7 @@ namespace Semana09
             this.Controls.Add(this.btnCancelar);
             this.Name = "FormBuscarProducto";
             this.Text = "FormBuscarProducto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBuscarProducto_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
