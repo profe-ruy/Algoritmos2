@@ -14,6 +14,7 @@ namespace Semana09
             StreamReader lector = new StreamReader(nombreArchivo);
             string texto = lector.ReadToEnd();
             lector.Close();
+            texto = texto.Replace("\n", string.Empty).Replace("\r", string.Empty);
             return texto;
         }
 
