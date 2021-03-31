@@ -50,8 +50,26 @@ namespace Semana09
             return null;
         }
 
-        //metodos publics
+        public bool Eliminar(int codigo)
+        {
+            //buscar el producto
+            for (int i = 0; i < productos.Count; i++)
+            {
+                //recupero el producto de la iteracion
+                Producto prod = productos.ElementAt(i);
+                if (prod.GetCodigo() == codigo) {
+                    //elimino el producto en el indice que está
+                    productos.RemoveAt(i);
+                    //actualizo el archivo
+                    GuardarArchivo();
+                    return true;
+                }
+            }
+            //retorna false indicando que no se borro
+            return false;
+        }
 
+        //metodos publics
         public string GetProductos()
         {
             string mensaje = "";

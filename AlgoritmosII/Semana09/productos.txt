@@ -1,5 +1,4 @@
 1,Papa,11.11;
 2,Tomate,22.22;
-3,Lechuga,33.33;
 4,Quinua,44;
 5,Cebolla,55.55;

@@ -48,6 +48,7 @@ namespace Semana09
             this.btnBuscar.TabIndex = 55;
             this.btnBuscar.Text = "Busca";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtPrecio
             // 
@@ -111,12 +112,14 @@ namespace Semana09
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Location = new System.Drawing.Point(102, 243);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(164, 23);
             this.btnEliminar.TabIndex = 47;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // FormEliminarProducto
             // 
