@@ -22,5 +22,12 @@ namespace Semana09
             //cerrar la aplicacion
             Application.Exit();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            FormListaProductos formLista = new FormListaProductos();
+            this.Hide();
+            formLista.Show();
+        }
     }
 }

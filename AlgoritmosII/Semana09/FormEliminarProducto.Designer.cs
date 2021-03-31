@@ -42,7 +42,7 @@ namespace Semana09
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(278, 67);
+            this.btnBuscar.Location = new System.Drawing.Point(281, 89);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(46, 23);
             this.btnBuscar.TabIndex = 55;
@@ -52,7 +52,7 @@ namespace Semana09
             // txtPrecio
             // 
             this.txtPrecio.Enabled = false;
-            this.txtPrecio.Location = new System.Drawing.Point(163, 163);
+            this.txtPrecio.Location = new System.Drawing.Point(166, 185);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(100, 20);
             this.txtPrecio.TabIndex = 54;
@@ -60,7 +60,7 @@ namespace Semana09
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(96, 166);
+            this.label3.Location = new System.Drawing.Point(99, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 53;
@@ -69,7 +69,7 @@ namespace Semana09
             // txtDescripcion
             // 
             this.txtDescripcion.Enabled = false;
-            this.txtDescripcion.Location = new System.Drawing.Point(163, 115);
+            this.txtDescripcion.Location = new System.Drawing.Point(166, 137);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
             this.txtDescripcion.TabIndex = 52;
@@ -77,7 +77,7 @@ namespace Semana09
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 118);
+            this.label2.Location = new System.Drawing.Point(99, 140);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 51;
@@ -85,7 +85,7 @@ namespace Semana09
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(163, 69);
+            this.txtCodigo.Location = new System.Drawing.Point(166, 91);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 50;
@@ -93,7 +93,7 @@ namespace Semana09
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 72);
+            this.label1.Location = new System.Drawing.Point(99, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 49;
@@ -101,16 +101,17 @@ namespace Semana09
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(99, 269);
+            this.btnCancelar.Location = new System.Drawing.Point(102, 291);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(164, 23);
             this.btnCancelar.TabIndex = 48;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(99, 221);
+            this.btnEliminar.Location = new System.Drawing.Point(102, 243);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(164, 23);
             this.btnEliminar.TabIndex = 47;
@@ -121,7 +122,7 @@ namespace Semana09
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 353);
+            this.ClientSize = new System.Drawing.Size(418, 426);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label3);

@@ -51,5 +51,19 @@ namespace Semana09
             this.Hide();
             formBuscar.Show();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            FormEliminarProducto formEliminar= new FormEliminarProducto();
+            this.Hide();
+            formEliminar.Show();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            FormActualizarProducto formActualizar= new FormActualizarProducto();
+            this.Hide();
+            formActualizar.Show();
+        }
     }
 }
