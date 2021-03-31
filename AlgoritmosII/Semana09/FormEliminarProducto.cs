@@ -26,6 +26,11 @@ namespace Semana09
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            IrAlListar();
+        }
+
+        private void IrAlListar()
+        {
             FormListaProductos formLista = new FormListaProductos();
             this.Hide();
             formLista.Show();
@@ -55,8 +60,9 @@ namespace Semana09
             bool resultado = repositorio.Eliminar(codigo);
             if (resultado)
             {
-                MessageBox.Show("Producto eliminado!");
                 Limpiar();
+                MessageBox.Show("Producto eliminado!");
+                IrAlListar();
             }
             else
             {

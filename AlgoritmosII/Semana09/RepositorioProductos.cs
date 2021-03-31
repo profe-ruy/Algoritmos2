@@ -69,6 +69,26 @@ namespace Semana09
             return false;
         }
 
+        public bool ActualizarProducto(Producto producto)
+        {
+            //buscar el producto
+            for (int i = 0; i < productos.Count; i++)
+            {
+                //recupero el producto de la iteracion
+                Producto prod = productos.ElementAt(i);
+                if (prod.GetCodigo() == producto.GetCodigo())
+                {
+                    //actualizo el producto en el indice que está
+                    productos[i] = producto;
+                    //actualizo el archivo
+                    GuardarArchivo();
+                    return true;
+                }
+            }
+            //retorna false indicando que no se borro
+            return false;
+        }
+
         //metodos publics
         public string GetProductos()
         {

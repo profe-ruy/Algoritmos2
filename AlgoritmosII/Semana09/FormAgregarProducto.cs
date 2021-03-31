@@ -29,7 +29,10 @@ namespace Semana09
             //agregar el producto a la lista
             bool resultado = repositorio.AgregarProducto(producto);
             if (resultado)
+            {
                 MessageBox.Show("Producto agregado");
+                IrAlListar();
+            }
             else
                 MessageBox.Show("Producto NO agregado");
 
@@ -37,11 +40,13 @@ namespace Semana09
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            //crear el formulario de Lista
+            IrAlListar();
+        }
+
+        private void IrAlListar()
+        {
             FormListaProductos formLista = new FormListaProductos();
-            //ocultar el formulario actual
             this.Hide();
-            //mostrar el nuevo formulario
             formLista.Show();
         }
 
