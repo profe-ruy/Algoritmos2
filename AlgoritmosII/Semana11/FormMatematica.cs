@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Semana10
+namespace Semana11
 {
     public partial class FormMatematica : Form
     {
         public FormMatematica()
         {
             InitializeComponent();
+        }
+
+        private void btnProcesar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{767ADC96-E1F4-4DFF-8052-5A7F0F82EE23}</ProjectGuid>
+    <ProjectGuid>{6B81DDE3-B29E-4154-852B-15F9B09AB420}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Semana10</RootNamespace>
-    <AssemblyName>Semana10</AssemblyName>
+    <RootNamespace>Semana11</RootNamespace>
+    <AssemblyName>Semana11</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

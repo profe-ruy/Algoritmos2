@@ -28,28 +28,5 @@ namespace Semana10
         {
             Application.Exit();
         }
-
-        private void btnProcesar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                //leer datos
-                double prueba1 = double.Parse(txtPractica1.Text);
-                double prueba2 = double.Parse(txtPractica2.Text);
-                double prueba3 = double.Parse(txtPractica3.Text);
-                double parcial = double.Parse(txtParcial.Text);
-                double final = double.Parse(txtFinal.Text);
-                //Crear nuestro curso Lenguaje
-                CursoLenguaje curso = new CursoLenguaje(prueba1, prueba2, prueba3, parcial, final);
-                //calcular el promedio
-                double promedio = curso.CalcularPromedio();
-                //mostrar mensaje
-                txtPromedio.Text = promedio.ToString();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hubo un error, intentelo más tarde");
-            }
-        }
     }
 }

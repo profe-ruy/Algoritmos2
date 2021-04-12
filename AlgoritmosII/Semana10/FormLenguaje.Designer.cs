@@ -149,7 +149,6 @@ namespace Semana10
             this.btnProcesar.TabIndex = 12;
             this.btnProcesar.Text = "Procesar";
             this.btnProcesar.UseVisualStyleBackColor = true;
-            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
             // btnCancelar
             // 

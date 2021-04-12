@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Semana10
+namespace Semana11
 {
-    public partial class FormMatematica : Form
+    public partial class FormLenguaje : Form
     {
-        public FormMatematica()
+        public FormLenguaje()
         {
             InitializeComponent();
+        }
+
+        private void btnProcesar_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -24,7 +22,7 @@ namespace Semana10
             formCursos.Show();
         }
 
-        private void FormMatematica_FormClosing(object sender, FormClosingEventArgs e)
+        private void FormLenguaje_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }

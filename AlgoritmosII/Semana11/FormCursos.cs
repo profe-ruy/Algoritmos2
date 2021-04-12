@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Semana10
+namespace Semana11
 {
     public partial class FormCursos : Form
     {
         public FormCursos()
         {
             InitializeComponent();
+        }
+
+        private void FormCursos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void btnMatematica_Click(object sender, EventArgs e)
@@ -29,16 +34,6 @@ namespace Semana10
             this.Hide();
             FormLenguaje formLenguaje= new FormLenguaje();
             formLenguaje.Show();
-        }
-
-        private void FormCursos_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void FormCursos_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
