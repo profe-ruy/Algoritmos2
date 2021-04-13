@@ -35,5 +35,19 @@ namespace Semana11
             FormLenguaje formLenguaje= new FormLenguaje();
             formLenguaje.Show();
         }
+
+        private void btnQuimica_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormQuimica formQuimica = new FormQuimica();
+            formQuimica.Show();
+        }
+
+        private void btnFisica_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormFisica formFisica= new FormFisica();
+            formFisica.Show();
+        }
     }
 }

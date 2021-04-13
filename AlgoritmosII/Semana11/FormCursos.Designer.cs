@@ -63,6 +63,7 @@ namespace Semana11
             this.btnFisica.TabIndex = 5;
             this.btnFisica.Text = "Fisica";
             this.btnFisica.UseVisualStyleBackColor = true;
+            this.btnFisica.Click += new System.EventHandler(this.btnFisica_Click);
             // 
             // btnQuimica
             // 
@@ -72,6 +73,7 @@ namespace Semana11
             this.btnQuimica.TabIndex = 4;
             this.btnQuimica.Text = "Quimica";
             this.btnQuimica.UseVisualStyleBackColor = true;
+            this.btnQuimica.Click += new System.EventHandler(this.btnQuimica_Click);
             // 
             // FormCursos
             // 
