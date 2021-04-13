@@ -39,7 +39,7 @@ namespace Semana11
             this.label4 = new System.Windows.Forms.Label();
             this.txtLectura = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPractica1 = new System.Windows.Forms.TextBox();
+            this.txtPrueba = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -127,21 +127,21 @@ namespace Semana11
             this.label3.TabIndex = 18;
             this.label3.Text = "Lectura";
             // 
-            // txtPractica1
+            // txtPrueba
             // 
-            this.txtPractica1.Location = new System.Drawing.Point(202, 61);
-            this.txtPractica1.Name = "txtPractica1";
-            this.txtPractica1.Size = new System.Drawing.Size(100, 20);
-            this.txtPractica1.TabIndex = 15;
+            this.txtPrueba.Location = new System.Drawing.Point(202, 61);
+            this.txtPrueba.Name = "txtPrueba";
+            this.txtPrueba.Size = new System.Drawing.Size(100, 20);
+            this.txtPrueba.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(73, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Practica 1";
+            this.label1.Text = "Prueba";
             // 
             // FormLenguaje
             // 
@@ -158,7 +158,7 @@ namespace Semana11
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtLectura);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtPractica1);
+            this.Controls.Add(this.txtPrueba);
             this.Controls.Add(this.label1);
             this.Name = "FormLenguaje";
             this.Text = "FormLenguaje";
@@ -180,7 +180,7 @@ namespace Semana11
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtLectura;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPractica1;
+        private System.Windows.Forms.TextBox txtPrueba;
         private System.Windows.Forms.Label label1;
     }
 }

@@ -37,15 +37,13 @@ namespace Semana11
             this.label5 = new System.Windows.Forms.Label();
             this.txtParcial = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtPractica2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPractica1 = new System.Windows.Forms.TextBox();
+            this.txtPrueba = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(221, 245);
+            this.btnCancelar.Location = new System.Drawing.Point(221, 222);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(99, 23);
             this.btnCancelar.TabIndex = 41;
@@ -55,7 +53,7 @@ namespace Semana11
             // 
             // btnProcesar
             // 
-            this.btnProcesar.Location = new System.Drawing.Point(94, 245);
+            this.btnProcesar.Location = new System.Drawing.Point(94, 222);
             this.btnProcesar.Name = "btnProcesar";
             this.btnProcesar.Size = new System.Drawing.Size(99, 23);
             this.btnProcesar.TabIndex = 40;
@@ -65,7 +63,7 @@ namespace Semana11
             // 
             // txtPromedio
             // 
-            this.txtPromedio.Location = new System.Drawing.Point(220, 301);
+            this.txtPromedio.Location = new System.Drawing.Point(220, 278);
             this.txtPromedio.Name = "txtPromedio";
             this.txtPromedio.Size = new System.Drawing.Size(100, 20);
             this.txtPromedio.TabIndex = 39;
@@ -73,7 +71,7 @@ namespace Semana11
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(91, 304);
+            this.label6.Location = new System.Drawing.Point(91, 281);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(51, 13);
             this.label6.TabIndex = 38;
@@ -81,7 +79,7 @@ namespace Semana11
             // 
             // txtFinal
             // 
-            this.txtFinal.Location = new System.Drawing.Point(220, 184);
+            this.txtFinal.Location = new System.Drawing.Point(220, 161);
             this.txtFinal.Name = "txtFinal";
             this.txtFinal.Size = new System.Drawing.Size(100, 20);
             this.txtFinal.TabIndex = 37;
@@ -89,7 +87,7 @@ namespace Semana11
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(91, 187);
+            this.label5.Location = new System.Drawing.Point(91, 164);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 13);
             this.label5.TabIndex = 36;
@@ -97,7 +95,7 @@ namespace Semana11
             // 
             // txtParcial
             // 
-            this.txtParcial.Location = new System.Drawing.Point(220, 137);
+            this.txtParcial.Location = new System.Drawing.Point(220, 114);
             this.txtParcial.Name = "txtParcial";
             this.txtParcial.Size = new System.Drawing.Size(100, 20);
             this.txtParcial.TabIndex = 35;
@@ -105,43 +103,27 @@ namespace Semana11
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(91, 140);
+            this.label4.Location = new System.Drawing.Point(91, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 34;
             this.label4.Text = "Parcial";
             // 
-            // txtPractica2
+            // txtPrueba
             // 
-            this.txtPractica2.Location = new System.Drawing.Point(220, 80);
-            this.txtPractica2.Name = "txtPractica2";
-            this.txtPractica2.Size = new System.Drawing.Size(100, 20);
-            this.txtPractica2.TabIndex = 31;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(91, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Practica 2";
-            // 
-            // txtPractica1
-            // 
-            this.txtPractica1.Location = new System.Drawing.Point(220, 37);
-            this.txtPractica1.Name = "txtPractica1";
-            this.txtPractica1.Size = new System.Drawing.Size(100, 20);
-            this.txtPractica1.TabIndex = 29;
+            this.txtPrueba.Location = new System.Drawing.Point(221, 60);
+            this.txtPrueba.Name = "txtPrueba";
+            this.txtPrueba.Size = new System.Drawing.Size(100, 20);
+            this.txtPrueba.TabIndex = 29;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(91, 40);
+            this.label1.Location = new System.Drawing.Point(92, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Practica 1";
+            this.label1.Text = "Prueba";
             // 
             // FormMatematica
             // 
@@ -156,9 +138,7 @@ namespace Semana11
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtParcial);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtPractica2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPractica1);
+            this.Controls.Add(this.txtPrueba);
             this.Controls.Add(this.label1);
             this.Name = "FormMatematica";
             this.Text = "FormMatematica";
@@ -178,9 +158,7 @@ namespace Semana11
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtParcial;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtPractica2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPractica1;
+        private System.Windows.Forms.TextBox txtPrueba;
         private System.Windows.Forms.Label label1;
     }
 }
