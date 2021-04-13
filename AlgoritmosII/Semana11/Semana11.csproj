@@ -52,6 +52,12 @@
     <Compile Include="FormCursos.Designer.cs">
       <DependentUpon>FormCursos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormFisica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFisica.Designer.cs">
+      <DependentUpon>FormFisica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLenguaje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +70,28 @@
     <Compile Include="FormMatematica.Designer.cs">
       <DependentUpon>FormMatematica.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQuimica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuimica.Designer.cs">
+      <DependentUpon>FormQuimica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormCursos.resx">
       <DependentUpon>FormCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFisica.resx">
+      <DependentUpon>FormFisica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLenguaje.resx">
       <DependentUpon>FormLenguaje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMatematica.resx">
       <DependentUpon>FormMatematica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuimica.resx">
+      <DependentUpon>FormQuimica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

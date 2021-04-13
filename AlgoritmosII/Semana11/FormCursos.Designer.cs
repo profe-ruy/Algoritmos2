@@ -31,11 +31,13 @@ namespace Semana11
         {
             this.btnLenguaje = new System.Windows.Forms.Button();
             this.btnMatematica = new System.Windows.Forms.Button();
+            this.btnFisica = new System.Windows.Forms.Button();
+            this.btnQuimica = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLenguaje
             // 
-            this.btnLenguaje.Location = new System.Drawing.Point(104, 170);
+            this.btnLenguaje.Location = new System.Drawing.Point(229, 174);
             this.btnLenguaje.Name = "btnLenguaje";
             this.btnLenguaje.Size = new System.Drawing.Size(152, 97);
             this.btnLenguaje.TabIndex = 3;
@@ -45,7 +47,7 @@ namespace Semana11
             // 
             // btnMatematica
             // 
-            this.btnMatematica.Location = new System.Drawing.Point(104, 43);
+            this.btnMatematica.Location = new System.Drawing.Point(46, 174);
             this.btnMatematica.Name = "btnMatematica";
             this.btnMatematica.Size = new System.Drawing.Size(152, 97);
             this.btnMatematica.TabIndex = 2;
@@ -53,11 +55,33 @@ namespace Semana11
             this.btnMatematica.UseVisualStyleBackColor = true;
             this.btnMatematica.Click += new System.EventHandler(this.btnMatematica_Click);
             // 
+            // btnFisica
+            // 
+            this.btnFisica.Location = new System.Drawing.Point(229, 47);
+            this.btnFisica.Name = "btnFisica";
+            this.btnFisica.Size = new System.Drawing.Size(152, 97);
+            this.btnFisica.TabIndex = 5;
+            this.btnFisica.Text = "Fisica";
+            this.btnFisica.UseVisualStyleBackColor = true;
+            this.btnFisica.Click += new System.EventHandler(this.btnFisica_Click);
+            // 
+            // btnQuimica
+            // 
+            this.btnQuimica.Location = new System.Drawing.Point(46, 47);
+            this.btnQuimica.Name = "btnQuimica";
+            this.btnQuimica.Size = new System.Drawing.Size(152, 97);
+            this.btnQuimica.TabIndex = 4;
+            this.btnQuimica.Text = "Quimica";
+            this.btnQuimica.UseVisualStyleBackColor = true;
+            this.btnQuimica.Click += new System.EventHandler(this.btnQuimica_Click);
+            // 
             // FormCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 339);
+            this.ClientSize = new System.Drawing.Size(428, 339);
+            this.Controls.Add(this.btnFisica);
+            this.Controls.Add(this.btnQuimica);
             this.Controls.Add(this.btnLenguaje);
             this.Controls.Add(this.btnMatematica);
             this.Name = "FormCursos";
@@ -71,6 +95,8 @@ namespace Semana11
 
         private System.Windows.Forms.Button btnLenguaje;
         private System.Windows.Forms.Button btnMatematica;
+        private System.Windows.Forms.Button btnFisica;
+        private System.Windows.Forms.Button btnQuimica;
     }
 }
 
