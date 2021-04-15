@@ -31,7 +31,22 @@ namespace Semana11
 
         private void btnProcesar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                //leer datos
+                double notaParcial = double.Parse(txtParcial.Text);
+                double notaFinal = double.Parse(txtFinal.Text);
+                //crear nuestro objeto curso Quimica
+                CursoFisica cursoFisica = new CursoFisica(notaParcial, notaFinal);
+                //procesar el promedio
+                double promedio = cursoFisica.ObtenerPromedio();
+                //salida de datos
+                txtPromedio.Text = promedio.ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error, favor de verificar");
+            }
         }
     }
 }

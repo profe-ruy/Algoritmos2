@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Curso.cs" />
+    <Compile Include="CursoFisica.cs" />
+    <Compile Include="CursoQuimica.cs" />
     <Compile Include="FormCursos.cs">
       <SubType>Form</SubType>
     </Compile>
