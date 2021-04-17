@@ -61,6 +61,7 @@ namespace Semana12
             this.btnProcesar.TabIndex = 38;
             this.btnProcesar.Text = "Procesar";
             this.btnProcesar.UseVisualStyleBackColor = true;
+            this.btnProcesar.Click += new System.EventHandler(this.btnProcesar_Click);
             // 
             // txtPromedio
             // 

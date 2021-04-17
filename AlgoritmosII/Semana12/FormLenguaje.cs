@@ -28,5 +28,27 @@ namespace Semana12
             FormCursos formCursos = new FormCursos();
             formCursos.Show();
         }
+
+        private void btnProcesar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //leer datos 
+                double prueba = double.Parse(txtPrueba.Text);
+                double parcial = double.Parse(txtParcial.Text);
+                double lectura = double.Parse(txtLectura.Text);
+                double final = double.Parse(txtFinal.Text);
+                //crear el objeto curso Lenguaje
+                CursoLenguaje cursoLenguaje = new CursoLenguaje(prueba, lectura, parcial, final);
+                //obtener el promedio
+                double promedio = cursoLenguaje.ObtenerPromedio();
+                //mostrar datos
+                txtPromedio.Text = promedio.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrio un error, favor de verificar");
+            }
+        }
     }
 }
