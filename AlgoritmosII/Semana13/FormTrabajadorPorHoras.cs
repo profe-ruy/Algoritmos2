@@ -28,5 +28,24 @@ namespace Semana13
             FormInicio formInicio = new FormInicio();
             formInicio.Show();
         }
+
+        private void btnProcesar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double horas = double.Parse(txtHoras.Text);
+                double precioPorHora = double.Parse(txtPrecioHora.Text);
+                //Crear clase Trabajador por Horas
+                TrabajadorPorHoras trabajadorPorHoras = new TrabajadorPorHoras(horas, precioPorHora);
+                //procesar
+                string mensaje = trabajadorPorHoras.CalcularPago();
+                //mostrar mensaje
+                txtResultado.Text = mensaje;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error, intentarlo más tarde ");
+            }
+        }
     }
 }
