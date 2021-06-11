@@ -36,12 +36,14 @@ namespace Semana14
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.txtListado = new System.Windows.Forms.TextBox();
+            this.txtTrabajador = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 28);
+            this.label1.Location = new System.Drawing.Point(61, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 0;
@@ -49,7 +51,7 @@ namespace Semana14
             // 
             // txtSueldo
             // 
-            this.txtSueldo.Location = new System.Drawing.Point(192, 25);
+            this.txtSueldo.Location = new System.Drawing.Point(192, 78);
             this.txtSueldo.Name = "txtSueldo";
             this.txtSueldo.Size = new System.Drawing.Size(138, 20);
             this.txtSueldo.TabIndex = 1;
@@ -60,7 +62,7 @@ namespace Semana14
             this.cboTipoTrabajador.Items.AddRange(new object[] {
             "Planilla",
             "Honorarios"});
-            this.cboTipoTrabajador.Location = new System.Drawing.Point(192, 83);
+            this.cboTipoTrabajador.Location = new System.Drawing.Point(192, 117);
             this.cboTipoTrabajador.Name = "cboTipoTrabajador";
             this.cboTipoTrabajador.Size = new System.Drawing.Size(138, 21);
             this.cboTipoTrabajador.TabIndex = 2;
@@ -68,7 +70,7 @@ namespace Semana14
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(61, 86);
+            this.label2.Location = new System.Drawing.Point(61, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 3;
@@ -76,7 +78,7 @@ namespace Semana14
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(64, 148);
+            this.btnAgregar.Location = new System.Drawing.Point(64, 182);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(117, 23);
             this.btnAgregar.TabIndex = 4;
@@ -85,7 +87,7 @@ namespace Semana14
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(213, 148);
+            this.btnLimpiar.Location = new System.Drawing.Point(213, 182);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(117, 23);
             this.btnLimpiar.TabIndex = 5;
@@ -94,17 +96,35 @@ namespace Semana14
             // 
             // txtListado
             // 
-            this.txtListado.Location = new System.Drawing.Point(64, 214);
+            this.txtListado.Location = new System.Drawing.Point(64, 233);
             this.txtListado.Multiline = true;
             this.txtListado.Name = "txtListado";
             this.txtListado.Size = new System.Drawing.Size(266, 197);
             this.txtListado.TabIndex = 6;
+            // 
+            // txtTrabajador
+            // 
+            this.txtTrabajador.Location = new System.Drawing.Point(192, 36);
+            this.txtTrabajador.Name = "txtTrabajador";
+            this.txtTrabajador.Size = new System.Drawing.Size(138, 20);
+            this.txtTrabajador.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(61, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Nombre Trabajador";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 448);
+            this.Controls.Add(this.txtTrabajador);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtListado);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
@@ -128,6 +148,8 @@ namespace Semana14
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.TextBox txtListado;
+        private System.Windows.Forms.TextBox txtTrabajador;
+        private System.Windows.Forms.Label label3;
     }
 }
 
