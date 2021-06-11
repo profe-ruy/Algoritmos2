@@ -84,6 +84,7 @@ namespace Semana14
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnLimpiar
             // 
@@ -96,10 +97,11 @@ namespace Semana14
             // 
             // txtListado
             // 
-            this.txtListado.Location = new System.Drawing.Point(64, 233);
+            this.txtListado.Location = new System.Drawing.Point(12, 233);
             this.txtListado.Multiline = true;
             this.txtListado.Name = "txtListado";
-            this.txtListado.Size = new System.Drawing.Size(266, 197);
+            this.txtListado.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtListado.Size = new System.Drawing.Size(375, 197);
             this.txtListado.TabIndex = 6;
             // 
             // txtTrabajador
